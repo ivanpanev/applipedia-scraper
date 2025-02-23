@@ -38,7 +38,7 @@ def get_application_data():
         headers=headers
     )
     
-    # Parse out the applications from the response
+    # Parse out the main applications table from the response
     applications = []
     app_pattern = re.compile(
         r'ShowApplicationDetail\(\'(\d+)\',\s*\'([^\']+)\',\s*\'(\d+)\'\)[^>]*>([^<]+)<',
@@ -52,7 +52,7 @@ def get_application_data():
             'display_name': match[3].strip()
         })
 
-    # Regex to extract properties from the application detail page
+    # Regex to extract properties from the application detailed pop-up
     property_patterns = {
         'Category': r'Category\s*<\/td>\s*<td[^>]*>(.*?)<\/td>',
         'Subcategory': r'Subcategory\s*<\/td>\s*<td[^>]*>(.*?)<\/td>',
