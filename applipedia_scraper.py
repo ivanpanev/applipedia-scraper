@@ -132,7 +132,7 @@ def main():
     ]
     
     date_time_stamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M")
-    output_filename = f"applepedia_data_{date_time_stamp}.csv"
+    output_filename = f"applipedia_data_{date_time_stamp}.csv"
     
     # Write to CSV
     with open(output_filename, mode='w', newline='', encoding='utf-8') as csv_file:
