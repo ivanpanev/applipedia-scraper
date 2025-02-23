@@ -1,5 +1,5 @@
 # Applipedia scraper
-Python script that scrapes the list of Palo Alto "applipedia" applications and their details, outputting them in a .csv file.   
+A simple python script that scrapes the list of Palo Alto "applipedia" applications and their details, outputting them in a .csv file.   
 
 Palo Alto Applipedia (https://applipedia.paloaltonetworks.com/) is a public knowledge base maintained by Palo Alto Networks that catalogs detailed technical and security attributes of Applications recognized by their Next-Generation Firewalls. As the website lacks a public API, there is no convenient way to programmatically access, filter or reference the list of up to date applicaitons and their properties. This script aims to solve this by scraping the table of applications and retreiving their attributes ('Name', 'Category', 'Subcategory', 'Evasive', 'ExcessiveBandwidth', 'Risk', 'Prone to Misuse', 'Capable of File Transfer', 'Technology', 'Tunnels Other Applications', 'Used by Malware', 'Has Known Vulnerabilities', 'Widely Used', 'SaaS', 'Standard Ports'), and outputting them in a .csv table file.
 
